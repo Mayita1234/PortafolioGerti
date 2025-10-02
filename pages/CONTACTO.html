@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index_style.css">
+</head>
+
+<body>
+    <!--Menu encabezado-->
+    <div class="contenedor_header">
+        <header>
+            <div class="logo">
+                <a href="#">Gerti</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="PROYECTOS.html">PROYECTOS</a></li>
+                    <li><a href="CONTACTO.html">CONTACTO</a></li>
+                </ul>
+
+            </nav>
+            <div class="nav-responsive">
+                <i class="fa-solid fa-bars"></i>
+                
+                
+        </header>
+    </div>
+    <!--SECCION CONTACTO-->
+    <nav class="contacto"></nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    
+    <div class="container my-5">
+        <section id="contacto" class="card p-4 shadow-sm">
+            <h2 class="mb-3">Contacto</h2>
+            <p>Complete el siguiente formulario para enviarme un mensaje:</p>
+
+            
+            <form id="contacto-Form">
+                <!-- Campo nombre -->
+                <label for="nombre" class="form-label">Nombre: </label><br>
+                <input type="text" id="nombre" name="nombre" class="form-control" required><br>
+
+                <!-- Campo correo -->
+                <label for="email" class="form-label">Email: </label><br>
+                <input type="email" id="email" name="email" class="form-control" required><br>
+
+                <!-- Campo asunto -->
+                <label for="asunto" class="form-label">Asunto: </label><br>
+                <input type="text" id="asunto" name="asunto" class="form-control" required><br>
+
+                <!-- Campo mensaje -->
+                <label for="mensaje" class="form-label">Mensaje: </label><br>
+                <textarea id="mensaje" name="mensaje" rows="5" cols="30" class="form-control" required></textarea><br>
+
+                <!-- Boton de envío-->
+                <input type="submit" class="btn btn-danger" value="Enviar">
+            </form>
+            </section>
+        </section>
+    </div>
+    <footer>
+    
+    </footer>
+</body>
+</html>

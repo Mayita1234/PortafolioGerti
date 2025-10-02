@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Righteous&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    /* me permite deslizar cuando click en el link del menú */
+    background-color: #0f0f0f;
+    scroll-behavior: smooth;
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9%;
+}
+
+/* MENU */
+.contenedor_header{
+    background: rgb(54, 37, 54);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.contenedor_header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.contenedor_header header .logo a{
+    font-family: 'Righteous', cursive;
+    font-size: 36px;
+    color: rgb(241, 49, 177);
+    text-decoration: none;
+
+}
+.contenedor_header header ul{
+    list-style: none;
+    display: flex;
+}
+
+.contenedor_header header nav ul li a{
+    text-align: none;
+    color: rgb(206, 196, 206);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+}
+
+.contenedor_header header ul{
+    list-style: none;
+    display: flex;
+}
+
+.contenedor_header header nav ul li a{
+    text-align: none;
+    color: rgb(206, 196, 206);
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor_header header nav ul li a:hover{
+    color: #e013be;
+}
+
+.nav-responsive{
+    background-color: #e013be;
+    color: bisque;
+    padding: 5px; 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none
+}
+
+
+/* SECCION I N I C I O */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(../img/portada.jpeg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-img img{
+    border: 10px solid #5f485b;
+    width: 35vw;
+    border-radius: 100%;
+}
+    
+.inicio-contenido h3{
+    color: #d4d3d3;
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+
+span{
+    color: rgb(241, 49, 177);
+}
+    
+
+.inicio-contenido h1{
+    color: #ffffff;
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 1.3;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.inicio-contenido p{
+    margin-top: 40px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.btn{
+    margin-top: 40px;
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: rgb(241, 49, 177);
+    border-radius: 1.5rem;
+    box-shadow: 0 0 1rem rgb(241, 49, 177);
+    font-size: 1.6rem;
+    color: rgb(252, 250, 251);
+    letter-spacing: .1rem;
+    font-weight: 200;
+}
+
+/*seccion hablidades*/
+
+.Habilidades{
+    
+    text-align: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #111312;
+    margin-bottom: 40px;
+
+}
+.Habilidades h2{
+    background-color: #0f0f0f;
+    font-size: 4.8rem;
+    margin-bottom: 10px;
+    color: #e0afe0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.Habilidades .descripcion{
+    margin-bottom: 26px;
+    font-size: 1.rem;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 0.5px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contenedor.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 10px;
+    align-items: stretch;
+    margin: 17px;
+
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #9e7e9e;
+    backdrop-filter: blur(10px);
+    border: 2px solid #775d76;
+    border-radius: 12px;
+    padding: 38px;
+    min-height: 120px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 18px 30px rgba(53, 35, 35, 0.2);
+}
+
+.card h3{
+    margin: 10px 0;
+    font-size: 1.8rem;
+    color: #3b0707;
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.card p{
+    font-size: 0.9rem;
+    line-height: 1.4;
+    color: #0f0f0f;
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+/*seccion certificados */
+.flip-section h2{
+    
+    text-align: center;
+    font-size: 4.8rem;
+    margin-bottom: 20px;
+    color: #e0afe0;
+}
+
+.flip-section p{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+    margin-bottom: 26px;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    color: rgb(255, 255, 255);
+}
+ 
+.flip-contenedor{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.flip-card{
+    width: 220px;
+    height: 280px;
+    perspective: 1000px;
+    position: relative;
+}
+ 
+.flip-card-inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+}
+ 
+.flip-card:hover .flip-card-inner{
+    transform: rotateY(180deg);
+}
+ 
+.flip-card-front, .flip-card-back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 0 6px 12px rgba(212, 97, 195, 0.9);
+}
+ 
+.flip-card-front{
+    background: rgba(211, 133, 185, 0.8);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color:rgb(252, 253, 252);
+    text-align: center;
+    padding: 10px;
+}
+ 
+.flip-card-front h3{
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 2px 6px rgba(73, 18, 50, 0.6);
+    margin: 0;
+}
+ 
+ 
+.flip-card-back{
+    background: rgba(192, 60, 185, 0.9);
+    border: 1px solid rgba(158, 116, 116, 0.2);
+    transform: rotateY(180deg);
+}
+ 
+.flip-card-back img{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.flip-card-back img:hover{
+    transform: scale(1.1);
+}
+
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contenedor{
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80%;
+    border-radius: 12px;
+    box-shadow: #690f0f;
+    animation: zoom 0.3s ease;
+}
+
+@keyframes zoom{
+    from{transform: scale(0.7); opacity: 0;}
+    to{transform: scale(1); opacity: 1;}
+}
+
+
+.cerrar{
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #b44343;
+    font-size: 40px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.cerrar:hover{
+    color: #681750;
+}
+
+footer{
+    background: rgb(54, 37, 54);
+    backdrop-filter: blur(10px);
+    padding: 40px 20px 20px;
+    position: relative;
+    z-index: 1;
+    color: #fffefe;
+}
+
+
+
+.contenedor-footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #f1f1f1;
+}
+
+.footer-contacto .footer-nav{
+    flex: 1;
+    min-width: 250px;
+    color: #fffefe;
+    
+}
+ 
+.footer-contacto h3, .footer-nav h3{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    color: #f1f1f1;
+}
+ 
+.footer-nav ul{
+    list-style: none;
+    padding: 0;
+    color: rgb(246, 255, 255);
+}
+ 
+.footer-nav li{
+    margin-bottom: 8px;
+}
+ 
+.footer-nav a{
+    text-decoration: none;
+    color: rgb(247, 13, 188);
+    transition: color 0.3s ease;
+    
+}
+ 
+.footer-nav a:hover{
+    color: rgb(247, 248, 248);
+}
+
+.footer-copy{
+    text-align: center;
+    text-emphasis: none;
+    margin-top: 30px;
+    font-size: 0.90rem;
+}
